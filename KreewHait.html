@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/b356ad9dc8.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./src/containers.css">
+    <script src="./src/script.js" defer></script> <!--slides-->
+    <link rel="stylesheet" href="img/style.css"> <!--css do nav-->
+    <script src="assets/script.js"></script> <!-- script nav-->
+    <title>Kreewhait</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>KreewHait</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#inicio" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#fotos" class="nav-link">Designer</a></li>
+                    <li class="nav-item"><a href="#sobre" class="nav-link"> Sobre Mim</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="https://livepix.gg/kreewhait"  target="_blank"><i class="bi bi-pix"></i>Pix</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#inicio" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#fotos" class="nav-link">Designer</a></li>
+                <li class="nav-item"><a href="#sobre" class="nav-link">Sobre Mim</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="https://livepix.gg/kreewhait" target="_blank"><i class="bi bi-pix"></i>Pix</a></button>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container" id="inicio">
+        <header>
+            <img src="img/eu.png" alt="Minha foto do perfil">
+            <h1>Kreewhait</h1>
+            <p>For business inquiries: contatokreewhait@gmail.com</p>
+            <br>
+            <p>Live na Twitch: Segunda a Sábado (12h30/13:00 às 15:30/17h)</p>
+            <br>
+        </header>
+        <section class="botoes-links">
+            <a href="https://www.youtube.com/@KreewHait" target="_blank" class="link">
+                <button class="degrade">
+                    <span>Canal Principal</span>
+                    <i class="bi bi-youtube"></i>
+                </button>
+            </a>
+            <a href="https://www.youtube.com/@livesdokreewhait" target="_blank" class="link">
+                <button class="degrade">
+                    <span>Canal secundário</span>
+                    <i class="bi bi-youtube"></i>
+                </button>
+            </a>
+            <a href="https://twitter.com/Kreewhaitlol" target="_blank" class="link">
+                <button class="degrade">
+                    <span>Twitter</span>
+                    <i class="bi bi-twitter"></i>
+                </button >
+            </a>
+            <a href="https://www.instagram.com/kreewhait/?hl=pt-br" target="_blank" class="link">
+                <button class="degrade">
+                    <span>Instagram</span>
+                    <i class="bi bi-instagram"></i>
+                </button>
+            </a>
+            <a href="https://www.twitch.tv/kreewhait" target="_blank" class="link">
+                <button class="degrade">
+                    <span>Twitch</span>
+                    <i class="bi bi-twitch"></i>
+                </button>
+            </a>
+            <a href="https://www.instagram.com/galaxia_artz/" target="_blank" class="link">
+                <button class="degrade">
+                    <span>Instagram da Artista do Canal</span>
+                    <i class="bi bi-instagram"></i>
+                </button>
+            </a>
+        </section><!--botoes-links-->
+    </div><!--container-->
+
+  <div class="container-slider" id="fotos">
+    <button id="prev-button"><img src="img/arr.png" alt="prev-button"></button>
+    <div class="container-images">
+      <img src="img/1.png" alt="girl" class="slider on">
+      <img src="img/2.png" alt="girl" class="slider">
+      <img src="img/3.png" alt="girl" class="slider">
+      <img src="img/4.png" alt="girl" class="slider">
+      <img src="img/5.png" alt="girl" class="slider">
+      <img src="img/6.png" alt="girl" class="slider">
+      <img src="img/7.png" alt="girl" class="slider">
+      <img src="img/8.png" alt="girl" class="slider">
+    </div>
+    <button id="next-button"><img src="img/arr.png" alt="next-button"></button>
+    
+  </div>
+
+<!--seleção sobre mim-->
+<main>
+    <article aria-label="seção sobre mim" class="sobre" id="sobre">
+        <div class="sobre_titulo" id="sobremim">
+            <h2 class="titulo">SOBRE<span> MIM</span></h2>
+        </div>
+        <img src="img/euu.png" alt="Paulo Cesar">
+        
+        <div class="sobre_conteudo" >
+            <div class="sobre_texto">
+                <h2>F.A.Q</h2>
+                <p><span>• Quando começou a jogar lol e de Talon?</span><br>
+                 Comecei a jogar na season 3 e de talon em algum momento da season 8.<br>
+                 <br>
+                    <span>• Qual foi o seu maior elo?</span><br>
+                    O maior elo que eu já atingi foi Grão-Mestre (630 pdl).<br>
+                    <br>
+                    <span>• Faz mais alguma coisa além de stream?</span><br>
+                    Não, no momento eu to focando 100% na minha stream e no youtube.<br>
+                    <br>
+                    <span>• Qual a melhor runa, build pra Talon?</span><br>
+                    comandos na twitch !runas !build<br>
+                    <br>
+                    <span>• Tem alguma dica pra dar?</span><br>
+                    Aconselho assistir meus videos, comandos na twitch-> !guia !combos !matchups <br>
+                    <br>
+                    <span>• Melhor skin?</span><br>
+                    Espada resiliente.<br>
+                    <br>
+        
+                    <span>• Joga outros jogos além de lol?</span><br>
+                    Sim, gosto bastante de Dead by Delight, Rocket league e GTA 5.<br>
+                    <br>
+                    <span>• Quem fez as artes e o site?</span><br>
+                    Tudo feito pela @galaxia_artz
+                    </p>
+                    <br>
+            <br>    <h3 class="assinatura">KreewHait</h3>
+            </div>
+            <div class="sobre_info">
+                <p><i class="fa-solid fa-calendar-days"></i>Data de nascimento: 03/04/2002 </p>
+                <p><i class="fa-solid fa-location-dot"></i>Endereço: ES/Vitória, Brazil</p>
+                <p><i class="fa-solid fa-envelope"></i>Email: contatokreewhait@gmail.com</p>
+            </div>
+        </div>
+    </article>
+</main>
+
+        <footer>
+            <a href="https://www.instagram.com/galaxia_artz" target="_blank" class="icon icon--instagram"><i class="bi bi-instagram"></i></a>
+            <br>
+            <br>
+            <p>Criado por @galaxia_artz</p>
+        </footer>
+        
+   
+</body>
+</html>
